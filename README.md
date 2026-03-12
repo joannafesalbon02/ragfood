@@ -239,10 +239,6 @@ Screenshots of the RAG system answering queries are included in the **screenshot
 
 Example screenshots include:
 
-- RAG system running in the terminal
-- Query input from the user
-- AI-generated responses retrieved from the food database
-
 
 
 ---
