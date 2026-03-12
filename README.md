@@ -144,3 +144,116 @@ Made by Callum using:
 * [mxbai-embed-large](https://ollama.com/library/mxbai-embed-large)
 * Indian food inspiration 🍛
 
+---
+
+# RAG Food System Enhancement
+
+## Author
+Joanna Marie Fesalbon
+
+---
+
+## Project Overview
+
+This project enhances the RAG (Retrieval-Augmented Generation) Food System by expanding its food database with 15 additional food entries. The goal of this enhancement is to improve the system’s ability to answer diverse food-related queries using semantic search and vector embeddings.
+
+The added entries include Filipino dishes, healthy Filipino food options, and unique international dishes. These additions allow the RAG system to retrieve more relevant information and generate more accurate responses when users ask questions related to food, nutrition, and cultural cuisine.
+
+This project also demonstrates the use of Git and GitHub for professional development workflows including repository forking, committing changes, resolving merge conflicts, and pushing updates to a remote repository.
+
+---
+
+# Added Food Items
+
+## Filipino Cuisine
+1. Chicken Adobo  
+2. Sinigang  
+3. Pancit Canton  
+4. Kare-Kare  
+5. Lechon
+   
+## Healthy Filipino Foods
+6. Chopsuey  
+7. Chicken Tinola  
+8. Ginisang Monggo  
+9. Ensaladang Talong  
+10. Fresh Lumpiang Ubod
+
+## International Dishes
+11. Paella (Spain)
+12. Goulash (HUngary)
+13. Tagine (Morocco)
+14. Pierogi (Poland)
+15. Ratatouille (France)
+
+These additions improve the diversity of the food knowledge base and allow the system to respond to a wider range of queries.
+
+---
+
+# Installation and Setup
+
+Follow these steps to run the project locally.
+
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/joannafesalbon02/ragfood.git
+
+## 2. Navigate to the Project Folder
+
+```bash
+cd ragfood
+
+## 3. Run the RAG System
+
+```bash
+python rag_run.py
+
+After running the script, the system will allow users to ask questions related to the food items stored in the database.
+
+---
+
+# Sample Queries Tested
+
+The RAG system was tested with different types of food-related questions to evaluate how well it retrieves information from the database.
+
+Example queries include:
+- What is Chicken Adobo?
+- Tell me about sinigang.
+- Which foods are healthy?
+- Which food are good for balanced diet?
+- Tell me about European dishes in the database.
+- What foods come from Asia?
+- What foods are commonly served during celebration?
+- Why is Lechon considered a special dish in Filipino celebration?
+- Which foods are cooked by slow simmering
+- What dishes are usually served with rice?
+
+These tests confirm that the RAG system can successfully retrieve and generate responses using the enhanced food dataset.
+
+---
+
+# Screenshots
+
+Screenshots of the RAG system answering queries are included in the **screenshots folder** to demonstrate successful system operation and testing.
+
+Example screenshots include:
+
+- RAG system running in the terminal
+- Query input from the user
+- AI-generated responses retrieved from the food database
+
+
+
+---
+
+# Personal Reflection
+
+This project helped me understand how Retrieval-Augmented Generation (RAG) works by combining a knowledge database with language models. Through this activity, I learned how structured datasets can be used to enhance AI systems by providing them with additional knowledge sources that improve response accuracy.
+
+By adding new food entries to the database, I observed how the RAG system retrieves relevant information using vector embeddings and semantic similarity instead of relying only on exact keyword matches. This allows the system to generate more meaningful responses based on the context of the user’s question.
+
+Another important part of this project was learning how to use Git and GitHub for version control. I practiced important development workflows such as forking a repository, committing changes, resolving merge conflicts, and pushing updates to a remote repository. These experiences helped me better understand how developers manage and maintain collaborative projects.
+
+Overall, this project strengthened my understanding of AI-powered information retrieval systems and improved my technical skills in Python, Git, and repository management. It also demonstrated how RAG systems can be applied to real-world applications such as intelligent search tools and AI-powered knowledge assistants.
+
