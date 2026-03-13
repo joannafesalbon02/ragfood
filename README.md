@@ -191,16 +191,15 @@ These additions improve the diversity of the food knowledge base and allow the s
 ---
 
 ## Project Structure
-
 ragfood/
 │
-├── foods.json        # Food database containing food information
-├── rag_run.py        # Python script to run the RAG system
-├── README.md         # Project documentation
-├── .gitignore        # Git ignore configuration
-├── Q1.png            # Sample query result
-├── Q2.png            # Sample query result
-└── Q3.png            # Sample query result
+├── foods.json # Food database containing food information
+├── rag_run.py # Python script to run the RAG system
+├── README.md # Project documentation
+├── .gitignore # Git ignore configuration
+├── Q1.png # Sample query result
+├── Q2.png # Sample query result
+└── Q3.png # Sample query result
 
 ---
 
@@ -266,11 +265,10 @@ The following improvements were implemented in this project:
 
 # Personal Reflection
 
-This project helped me understand how Retrieval-Augmented Generation (RAG) works by combining a knowledge database with language models. Through this activity, I learned how structured datasets can be used to enhance AI systems by providing them with additional knowledge sources that improve response accuracy.
+Working on this project helped me understand how Retrieval-Augmented Generation (RAG) systems function by combining a knowledge database with language models. Before doing this activity, I only had a basic idea of how AI could answer questions using stored information. Through building and testing the RAG Food System, I was able to see how an AI model can retrieve relevant data from a structured dataset and use it to generate more accurate and meaningful responses.
 
-By adding new food entries to the database, I observed how the RAG system retrieves relevant information using vector embeddings and semantic similarity instead of relying only on exact keyword matches. This allows the system to generate more meaningful responses based on the context of the user’s question.
+One of the most interesting parts of the project was adding new food items to the database and observing how the system responded to different queries. Instead of relying only on exact keyword matches, the system uses vector embeddings and semantic similarity to find related information. This means the system can understand the context of a user’s question and return relevant results even if the wording of the query is slightly different. Seeing this process in action helped me better understand how modern AI systems retrieve and process information.
 
-Another important part of this project was learning how to use Git and GitHub for version control. I practiced important development workflows such as forking a repository, committing changes, resolving merge conflicts, and pushing updates to a remote repository. These experiences helped me better understand how developers manage and maintain collaborative projects.
+Another valuable learning experience was using Git and GitHub for version control. I practiced important development steps such as forking a repository, committing changes, resolving merge conflicts, and pushing updates to my remote repository. These tasks helped me understand how developers manage project versions and collaborate on shared codebases.
 
-Overall, this project strengthened my understanding of AI-powered information retrieval systems and improved my technical skills in Python, Git, and repository management. It also demonstrated how RAG systems can be applied to real-world applications such as intelligent search tools and AI-powered knowledge assistants.
-
+Overall, this project improved my understanding of AI-powered retrieval systems and strengthened my technical skills in Python, Git, and repository management. It also showed me how RAG technology can be applied to real-world systems such as intelligent search tools and AI-based knowledge assistants.
