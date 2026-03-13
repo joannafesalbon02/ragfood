@@ -257,12 +257,14 @@ Below are sample queries executed in the RAG Food System demonstrating how the s
 
 ## Enhancements Made
 
+```
 The following improvements were implemented in this project:
 
 - Added 15 new food items to the database
 - Expanded the food dataset for better retrieval
 - Implemented Git workflow using forked repository
 - Added documentation and sample query results
+```
 
 ---
 
@@ -277,5 +279,3 @@ Another valuable learning experience was using Git and GitHub for version contro
 
 Overall, this project improved my understanding of AI-powered retrieval systems and strengthened my technical skills in Python, Git, and repository management. It also showed me how RAG technology can be applied to real-world systems such as intelligent search tools and AI-based knowledge assistants.
 ```
-
----
