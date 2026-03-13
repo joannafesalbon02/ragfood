@@ -255,9 +255,9 @@ Below are sample queries executed in the RAG Food System demonstrating how the s
 
 ---
 
+```
 ## Enhancements Made
 
-```
 The following improvements were implemented in this project:
 
 - Added 15 new food items to the database
@@ -267,10 +267,9 @@ The following improvements were implemented in this project:
 ```
 
 ---
-
+```
 # Personal Reflection
 
-```
 Working on this project helped me understand how Retrieval-Augmented Generation (RAG) systems function by combining a knowledge database with language models. Before doing this activity, I only had a basic idea of how AI could answer questions using stored information. Through building and testing the RAG Food System, I was able to see how an AI model can retrieve relevant data from a structured dataset and use it to generate more accurate and meaningful responses.
 
 One of the most interesting parts of the project was adding new food items to the database and observing how the system responded to different queries. Instead of relying only on exact keyword matches, the system uses vector embeddings and semantic similarity to find related information. This means the system can understand the context of a user’s question and return relevant results even if the wording of the query is slightly different. Seeing this process in action helped me better understand how modern AI systems retrieve and process information.
