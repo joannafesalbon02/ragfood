@@ -192,6 +192,7 @@ These additions improve the diversity of the food knowledge base and allow the s
 
 ## Project Structure
 
+```
 ragfood/
 │
 ├── foods.json      # Food database containing food information
@@ -201,6 +202,7 @@ ragfood/
 ├── Q1.png          # Sample query result
 ├── Q2.png          # Sample query result
 └── Q3.png          # Sample query result
+```
 
 ---
 
