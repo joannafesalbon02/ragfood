@@ -273,3 +273,5 @@ One of the most interesting parts of the project was adding new food items to th
 Another valuable learning experience was using Git and GitHub for version control. I practiced important development steps such as forking a repository, committing changes, resolving merge conflicts, and pushing updates to my remote repository. These tasks helped me understand how developers manage project versions and collaborate on shared codebases.
 
 Overall, this project improved my understanding of AI-powered retrieval systems and strengthened my technical skills in Python, Git, and repository management. It also showed me how RAG technology can be applied to real-world systems such as intelligent search tools and AI-based knowledge assistants.
+
+---
