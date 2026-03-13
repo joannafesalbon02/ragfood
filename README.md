@@ -218,7 +218,7 @@ Clone the Repository
 
 ```
 </> Bash
-git clone https://github.com/joannafesalbon02/ragfood.git
+git clone https://github.com/joannafesalbon02/ragfood
 ```
 
 ### 2. Navigate to the Project Folder
