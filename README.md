@@ -190,6 +190,20 @@ These additions improve the diversity of the food knowledge base and allow the s
 
 ---
 
+## Project Structure
+
+ragfood/
+│
+├── foods.json        # Food database containing food information
+├── rag_run.py        # Python script to run the RAG system
+├── README.md         # Project documentation
+├── .gitignore        # Git ignore configuration
+├── Q1.png            # Sample query result
+├── Q2.png            # Sample query result
+└── Q3.png            # Sample query result
+
+---
+
 # Installation and Setup
 
 Follow these steps to run the project locally.
@@ -222,10 +236,10 @@ Example queries include:
 - Tell me about sinigang.
 - Which foods are healthy?
 
-
 These tests confirm that the RAG system can successfully retrieve and generate responses using the enhanced food dataset.
 
 Below are sample queries executed in the RAG Food System demonstrating how the system retrieves food information from the enhanced dataset.
+
 ## Sample Query Results:
 
 ### Query 1
@@ -236,6 +250,18 @@ Below are sample queries executed in the RAG Food System demonstrating how the s
 
 ### Query 3
 ![Query 3 Result](Q3.png)
+
+---
+
+## Enhancements Made
+
+The following improvements were implemented in this project:
+
+- Added 15 new food items to the database
+- Expanded the food dataset for better retrieval
+- Implemented Git workflow using forked repository
+- Added documentation and sample query results
+
 ---
 
 # Personal Reflection
