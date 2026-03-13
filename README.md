@@ -212,17 +212,19 @@ ragfood/
 
 Follow these steps to run the project locally.
 
-***Clone the Repository***
+Clone the Repository
+
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/joannafesalbon02/ragfood.git
 
-***Navigate to the Project Folder***
+### 2. Navigate to the Project Folder
 
 ```bash
 cd ragfood
 
-***Run the RAG System***
+### 3. Run the RAG System
 
 ```bash
 python rag_run.py
