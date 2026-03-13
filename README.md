@@ -206,21 +206,21 @@ ragfood/
 
 ---
 
-# Installation and Setup
+## Installation and Setup
 
 Follow these steps to run the project locally.
 
-## 1. Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/joannafesalbon02/ragfood.git
 
-## 2. Navigate to the Project Folder
+### 2. Navigate to the Project Folder
 
 ```bash
 cd ragfood
 
-## 3. Run the RAG System
+### 3. Run the RAG System
 
 ```bash
 python rag_run.py
@@ -266,9 +266,6 @@ The following improvements were implemented in this project:
 - Added documentation and sample query results
 ```
 
----
-
-```
 # Personal Reflection
 
 Working on this project helped me understand how Retrieval-Augmented Generation (RAG) systems function by combining a knowledge database with language models. Before doing this activity, I only had a basic idea of how AI could answer questions using stored information. Through building and testing the RAG Food System, I was able to see how an AI model can retrieve relevant data from a structured dataset and use it to generate more accurate and meaningful responses.
