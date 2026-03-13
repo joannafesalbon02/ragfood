@@ -155,9 +155,9 @@ Joanna Marie Fesalbon
 
 ## Project Overview
 
-This project enhances the RAG (Retrieval-Augmented Generation) Food System by expanding its food database with 15 additional food entries. The goal of this enhancement is to improve the system’s ability to answer diverse food-related queries using semantic search and vector embeddings.
+   This project enhances the RAG (Retrieval-Augmented Generation) Food System by expanding its food database with 15 additional food entries. The goal of this enhancement is to improve the system’s ability to answer diverse food-related queries using semantic search and vector embeddings.
 
-The added entries include Filipino dishes, healthy Filipino food options, and unique international dishes. These additions allow the RAG system to retrieve more relevant information and generate more accurate responses when users ask questions related to food, nutrition, and cultural cuisine.
+   The added entries include Filipino dishes, healthy Filipino food options, and unique international dishes. These additions allow the RAG system to retrieve more relevant information and generate more accurate responses when users ask questions related to food, nutrition, and cultural cuisine.
 
 This project also demonstrates the use of Git and GitHub for professional development workflows including repository forking, committing changes, resolving merge conflicts, and pushing updates to a remote repository.
 
@@ -277,12 +277,12 @@ The following improvements were implemented in this project:
 ---
 # Personal Reflection
 
-Working on this project helped me understand how Retrieval-Augmented Generation (RAG) systems function by combining a knowledge database with language models. Before doing this activity, I only had a basic idea of how AI could answer questions using stored information. Through building and testing the RAG Food System, I was able to see how an AI model can retrieve relevant data from a structured dataset and use it to generate more accurate and meaningful responses.
+   Working on this project helped me understand how Retrieval-Augmented Generation (RAG) systems function by combining a knowledge database with language models. Before doing this activity, I only had a basic idea of how AI could answer questions using stored information. Through building and testing the RAG Food System, I was able to see how an AI model can retrieve relevant data from a structured dataset and use it to generate more accurate and meaningful responses.
 
-One of the most interesting parts of the project was adding new food items to the database and observing how the system responded to different queries. Instead of relying only on exact keyword matches, the system uses vector embeddings and semantic similarity to find related information. This means the system can understand the context of a user’s question and return relevant results even if the wording of the query is slightly different. Seeing this process in action helped me better understand how modern AI systems retrieve and process information.
+   One of the most interesting parts of the project was adding new food items to the database and observing how the system responded to different queries. Instead of relying only on exact keyword matches, the system uses vector embeddings and semantic similarity to find related information. This means the system can understand the context of a user’s question and return relevant results even if the wording of the query is slightly different. Seeing this process in action helped me better understand how modern AI systems retrieve and process information.
 
-Another valuable learning experience was using Git and GitHub for version control. I practiced important development steps such as forking a repository, committing changes, resolving merge conflicts, and pushing updates to my remote repository. These tasks helped me understand how developers manage project versions and collaborate on shared codebases.
+   Another valuable learning experience was using Git and GitHub for version control. I practiced important development steps such as forking a repository, committing changes, resolving merge conflicts, and pushing updates to my remote repository. These tasks helped me understand how developers manage project versions and collaborate on shared codebases.
 
-Overall, this project improved my understanding of AI-powered retrieval systems and strengthened my technical skills in Python, Git, and repository management. It also showed me how RAG technology can be applied to real-world systems such as intelligent search tools and AI-based knowledge assistants.
+   Overall, this project improved my understanding of AI-powered retrieval systems and strengthened my technical skills in Python, Git, and repository management. It also showed me how RAG technology can be applied to real-world systems such as intelligent search tools and AI-based knowledge assistants.
 ```
 
