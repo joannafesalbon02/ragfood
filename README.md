@@ -216,19 +216,22 @@ Clone the Repository
 
 ### 1. Clone the Repository
 
-```bash
+```
+</> Bash
 git clone https://github.com/joannafesalbon02/ragfood.git
 ```
 
 ### 2. Navigate to the Project Folder
 
-```bash
+```
+Command
 cd ragfood
 ```
 
 ### 3. Run the RAG System
 
-```bash
+```
+Command
 python rag_run.py
 ```
 
