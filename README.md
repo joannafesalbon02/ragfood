@@ -191,15 +191,16 @@ These additions improve the diversity of the food knowledge base and allow the s
 ---
 
 ## Project Structure
+
 ragfood/
 │
-├── foods.json # Food database containing food information
-├── rag_run.py # Python script to run the RAG system
-├── README.md # Project documentation
-├── .gitignore # Git ignore configuration
-├── Q1.png # Sample query result
-├── Q2.png # Sample query result
-└── Q3.png # Sample query result
+├── foods.json      # Food database containing food information
+├── rag_run.py      # Python script to run the RAG system
+├── README.md       # Project documentation
+├── .gitignore      # Git ignore configuration
+├── Q1.png          # Sample query result
+├── Q2.png          # Sample query result
+└── Q3.png          # Sample query result
 
 ---
 
