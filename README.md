@@ -149,11 +149,11 @@ Made by Callum using:
 # RAG Food System Enhancement
 
 ## Author
-Joanna Marie Fesalbon
+👩🏻‍💼 Joanna Marie Fesalbon
 
 ---
 
-## Project Overview
+## 💻 Project Overview 
 
    This project enhances the RAG (Retrieval-Augmented Generation) Food System by expanding its food database with 15 additional food entries. The goal of this enhancement is to improve the system’s ability to answer diverse food-related queries using semantic search and vector embeddings.
 
@@ -163,23 +163,23 @@ This project also demonstrates the use of Git and GitHub for professional develo
 
 ---
 
-# Added Food Items
+# 🍽️ Added Food Items 
 
-## Filipino Cuisine
+## 🍜 Filipino Cuisine 
 1. Chicken Adobo  
 2. Sinigang  
 3. Pancit Canton  
 4. Kare-Kare  
 5. Lechon
    
-## Healthy Filipino Foods
+## 🥗 Healthy Filipino Foods 
 6. Chopsuey  
 7. Chicken Tinola  
 8. Ginisang Monggo  
 9. Ensaladang Talong  
 10. Fresh Lumpiang Ubod
 
-## International Dishes
+## 🌏 International Dishes 
 11. Paella (Spain)
 12. Goulash (HUngary)
 13. Tagine (Morocco)
@@ -190,7 +190,7 @@ These additions improve the diversity of the food knowledge base and allow the s
 
 ---
 
-## Project Structure
+## 🗂️ Project Structure
 
 ```
 ragfood/
@@ -206,7 +206,7 @@ ragfood/
 
 ---
 
-## Installation and Setup
+## 💻🖱️ Installation and Setup
 
 ---
 
@@ -239,7 +239,7 @@ After running the script, the system will allow users to ask questions related t
 
 ---
 
-# Sample Queries Tested
+# 🧐 Sample Queries Tested
 
 The RAG system was tested with different types of food-related questions to evaluate how well it retrieves information from the database.
 
@@ -252,7 +252,7 @@ These tests confirm that the RAG system can successfully retrieve and generate r
 
 Below are sample queries executed in the RAG Food System demonstrating how the system retrieves food information from the enhanced dataset.
 
-## Sample Query Results:
+## 💾 Sample Query Results:
 
 ### Query 1
 [Query 1 Result](Q1.png)
@@ -275,7 +275,7 @@ The following improvements were implemented in this project:
 - Added documentation and sample query results
 ```
 ---
-# Personal Reflection
+# 📝 Personal Reflection
 
    Working on this project helped me understand how Retrieval-Augmented Generation (RAG) systems function by combining a knowledge database with language models. Before doing this activity, I only had a basic idea of how AI could answer questions using stored information. Through building and testing the RAG Food System, I was able to see how an AI model can retrieve relevant data from a structured dataset and use it to generate more accurate and meaningful responses.
 
