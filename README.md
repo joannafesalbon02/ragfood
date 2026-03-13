@@ -221,13 +221,7 @@ Example queries include:
 - What is Chicken Adobo?
 - Tell me about sinigang.
 - Which foods are healthy?
-- Which food are good for balanced diet?
-- Tell me about European dishes in the database.
-- What foods come from Asia?
-- What foods are commonly served during celebration?
-- Why is Lechon considered a special dish in Filipino celebration?
-- Which foods are cooked by slow simmering
-- What dishes are usually served with rice?
+
 
 These tests confirm that the RAG system can successfully retrieve and generate responses using the enhanced food dataset.
 
