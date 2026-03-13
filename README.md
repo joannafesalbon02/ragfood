@@ -267,6 +267,7 @@ The following improvements were implemented in this project:
 ```
 
 ---
+
 ```
 # Personal Reflection
 
