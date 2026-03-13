@@ -225,10 +225,7 @@ Example queries include:
 
 These tests confirm that the RAG system can successfully retrieve and generate responses using the enhanced food dataset.
 
-# Screenshots
-
-Screenshots of the RAG system answering queries are included in the **screenshots images** to demonstrate successful system operation and testing.
-
+Below are sample queries executed in the RAG Food System demonstrating how the system retrieves food information from the enhanced dataset.
 ## Sample Query Results:
 
 ### Query 1
