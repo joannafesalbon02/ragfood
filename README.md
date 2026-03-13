@@ -229,8 +229,16 @@ These tests confirm that the RAG system can successfully retrieve and generate r
 
 Screenshots of the RAG system answering queries are included in the **screenshots images** to demonstrate successful system operation and testing.
 
-Example screenshots:
+## Sample Query Results:
 
+### Query 1
+![Query 1 Result](Q1.png)
+
+### Query 2
+![Query 2 Result](Q2.png)
+
+### Query 3
+![Query 3 Result](Q3.png)
 ---
 
 # Personal Reflection
