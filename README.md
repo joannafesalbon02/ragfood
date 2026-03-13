@@ -218,16 +218,19 @@ Clone the Repository
 
 ```bash
 git clone https://github.com/joannafesalbon02/ragfood.git
+```
 
 ### 2. Navigate to the Project Folder
 
 ```bash
 cd ragfood
+```
 
 ### 3. Run the RAG System
 
 ```bash
 python rag_run.py
+```
 
 After running the script, the system will allow users to ask questions related to the food items stored in the database.
 
