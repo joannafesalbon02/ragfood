@@ -448,7 +448,6 @@
   "text": "Suutei tsai is a traditional Mongolian milk tea made with green tea, milk, water, and salt.",
   "region": "Mongolia",
   "type": "Beverage"
-<<<<<<< HEAD
 },
 {
   "id": "76",
@@ -539,7 +538,5 @@
   "text": "Ratatouille is a traditional vegetable dish from France made by slowly cooking ingredients such as eggplant, zucchini, tomatoes, bell peppers, onions, garlic, and herbs. The vegetables are gently simmered together until they become soft and flavorful while still maintaining their natural taste. Ratatouille is known for being nutritious and colorful. It can be served as a side dish with meat or fish, but it is also commonly enjoyed as a healthy main meal.",
   "region": "France",
   "type": "Vegetable Dish"
-=======
->>>>>>> 00d522f5fc806e0500f2d8d29be7ebb907fc9882
 }
 ]
