@@ -1,287 +1,650 @@
-Here’s a clear, beginner-friendly `README.md` for your RAG project, designed to explain what it does, how it works, and how someone can run it from scratch.
+# 🍽️ RAGFood: Local-to-Cloud RAG Migration Project
+---
+# 👩🏻‍💼 Author
+**Joanna Marie Fesalbon**  
+---
+
+**Cloud Migration / RAGFood Project**
+
+## 💻 Project Overview
+RAGFood is a food recommendation and food information retrieval system built using **Retrieval-Augmented Generation (RAG)**.  
+This project started as a **local-only implementation** using **ChromaDB** and a local LLM workflow, then was migrated into a **cloud-powered version** using **Upstash Vector** and **Groq API**.
+
+The goal of this project is to demonstrate how a traditional local RAG system can be transformed into a more scalable, cloud-ready solution while preserving retrieval quality and improving deployment readiness.
+
+This repository contains both:
+
+- **Local Version (Week 2)** → ChromaDB-based retrieval system
+- **Cloud Version (Week 3)** → Upstash Vector + Groq-powered RAG system
 
 ---
 
-## 📄 `README.md`
+# 🎯 Project Objectives
+This project was completed to achieve the following:
 
-````markdown
-# 🧠 RAG-Food: Simple Retrieval-Augmented Generation with ChromaDB + Ollama
-
-This is a **minimal working RAG (Retrieval-Augmented Generation)** demo using:
-
-- ✅ Local LLM via [Ollama](https://ollama.com/)
-- ✅ Local embeddings via `mxbai-embed-large`
-- ✅ [ChromaDB](https://www.trychroma.com/) as the vector database
-- ✅ A simple food dataset in JSON (Indian foods, fruits, etc.)
-
----
-
-## 🎯 What This Does
-
-This app allows you to ask questions like:
-
-- “Which Indian dish uses chickpeas?”
-- “What dessert is made from milk and soaked in syrup?”
-- “What is masala dosa made of?”
-
-It **does not rely on the LLM’s built-in memory**. Instead, it:
-
-1. **Embeds your custom text data** (about food) using `mxbai-embed-large`
-2. Stores those embeddings in **ChromaDB**
-3. For any question, it:
-   - Embeds your question
-   - Finds relevant context via similarity search
-   - Passes that context + question to a local LLM (`llama3.2`)
-4. Returns a natural-language answer grounded in your data.
+- Build a functional local Retrieval-Augmented Generation system
+- Migrate vector storage from local database to cloud vector database
+- Replace local model workflow with cloud-based LLM inference
+- Improve system organization, maintainability, and documentation
+- Expand the dataset with more diverse and detailed food entries
+- Test semantic retrieval quality and response performance
+- Present the final system in a professional GitHub portfolio format
 
 ---
 
-## 📦 Requirements
+# 🧠 What is RAG?
+**RAG (Retrieval-Augmented Generation)** is a system design that combines:
 
-### ✅ Software
+1. **Retrieval** → finds the most relevant stored information
+2. **Generation** → uses an LLM to answer naturally based on the retrieved context
 
-- Python 3.8+
-- Ollama installed and running locally
-- ChromaDB installed
+Instead of answering only from model memory, the system first searches a knowledge base and then generates a response grounded in those results.
 
-### ✅ Ollama Models Needed
-
-Run these in your terminal to install them:
-
-```bash
-ollama pull llama3.2
-ollama pull mxbai-embed-large
-````
-
-> Make sure `ollama` is running in the background. You can test it with:
->
-> ```bash
-> ollama run llama3.2
-> ```
+In this project, the knowledge base is a curated food dataset containing descriptions, cuisine origin, nutritional value, cooking methods, dietary tags, allergens, and cultural context.
 
 ---
 
-## 🛠️ Installation & Setup
+# 🏗️ Repository Structure
 
-### 1. Clone or download this repo
+RAGFOOD-MAIN
+├── .vscode
+├── chroma_db
+├── cloud-version
+│ ├── data
+│ │ └── foods.json
+│ ├── docs
+│ │ ├── Week 3 Test Queries
+│ │ └── Comparison and Quality Assessment
+│ ├── MIGRATION_PLAN.md
+│ ├── .env
+│ └── rag_run.py
+├── local-version
+├── foods.json
+├── Q1.png
+├── Q2.png
+├── Q3.png
+├── rag_run.py
+├── .gitignore
+└── README.md
 
-```bash
-git clone https://github.com/yourname/rag-food
-cd rag-food
+---
+
+# ⚙️ System Architecture
+
+## 📍 BEFORE: Local RAG Architecture
+
+```text
+User Question
+     │
+     ▼
+rag_run.py
+     │
+     ├── Generate Query Embedding using Ollama
+     │        │
+     │        ▼
+     │   Ollama Embeddings API
+     │
+     ├── Search Similar Documents
+     │        │
+     │        ▼
+     │     ChromaDB
+     │
+     ├── Retrieve Top Food Entries
+     │
+     ├── Build Prompt with Context
+     │
+     ├── Send Prompt to Ollama
+     │        │
+     │        ▼
+     │   Ollama Generate API
+     │
+     ▼
+Final Answer to User
+
 ```
 
-### 2. Install Python dependencies
+### Local Version Components
+- **Python CLI application**
+- **ChromaDB** for local vector storage
+- **foods.json** as dataset source
+- Local retrieval and generation pipeline
 
-```bash
-pip install chromadb requests
+### Local Version Characteristics
+- Works offline or locally
+- Requires local setup and dependencies
+- Retrieval depends on locally stored vectors
+- More manual setup for embeddings and storage
+
+---
+
+## ☁️ AFTER: Cloud RAG Architecture
+
+```text
+User Question
+     │
+     ▼
+rag_run.py
+     │
+     ├── Query Relevant Food Entries
+     │        │
+     │        ▼
+     │   Upstash Vector Database
+     │
+     ├── Retrieve Top Food Entries
+     │
+     ├── Build Prompt with Context
+     │
+     ├── Send Prompt to Groq Cloud API
+     │        │
+     │        ▼
+     │   Groq LLM (llama-3.1-8b-instant)
+     │
+     ▼
+Final Answer to User
+
 ```
 
-### 3. Run the RAG app
+### Cloud Version Components
+- **Python CLI application**
+- **Upstash Vector** for cloud-based semantic retrieval
+- **Groq API** for fast answer generation
+- Expanded and enhanced food dataset
+- Improved modular and cloud-ready workflow
 
-```bash
+### Cloud Version Characteristics
+- Cloud-based vector storage
+- Faster and more scalable retrieval pipeline
+- Cleaner deployment path
+- Better suited for production-style workflows
+
+---
+
+# 🔄 Cloud Migration Overview
+
+This project migrated the local RAG implementation into a cloud-based system by changing the retrieval and generation stack.
+
+## Key Migration Changes
+
+### ✅ Vector Database Migration
+**Before:** ChromaDB  
+**After:** Upstash Vector
+
+The local vector store was replaced with a cloud vector database to support scalable semantic search and easier cloud integration.
+
+### ✅ Embedding Workflow Simplification
+**Before:** manual/local embedding process  
+**After:** raw text upsert into Upstash
+
+The cloud version was updated to upload raw text directly instead of relying on local vector handling logic.
+
+### ✅ LLM Integration Upgrade
+**Before:** local/original LLM workflow  
+**After:** Groq API
+
+The generation layer was migrated to **Groq** for faster cloud-based inference.
+
+### ✅ Improved Error Handling
+The cloud version includes:
+- dependency checks
+- environment variable checks
+- safer startup handling
+- cloud service failure awareness
+
+### ✅ Data Enhancement
+The food database was expanded to support:
+- richer semantic search
+- better cultural exploration
+- stronger nutritional and dietary filtering
+- more realistic user food queries
+
+---
+
+# 🍜 Enhanced Food Database
+
+## 📊 Dataset Summary
+The food dataset was expanded and enriched to improve retrieval quality and answer relevance.
+
+### Database includes:
+- **35+ total food entries** 
+- **20 newly added enhanced food items**
+- broader cuisine representation
+- more health-conscious options
+- more comfort food entries
+- improved metadata for semantic retrieval
+
+---
+
+## 🧩 Newly Added Dataset Categories
+
+### 🌍 8 World Cuisine Items
+Examples include:
+- Shakshuka
+- Ceviche
+- Jerk Chicken
+- Feijoada
+- Bobotie
+- Koshari
+- Borscht
+- Moussaka
+
+### 🥗 6 Health-Conscious Items
+Examples include:
+- Quinoa Chickpea Buddha Bowl
+- Grilled Salmon with Quinoa
+- Lentil Spinach Soup
+- Tofu Vegetable Stir Fry
+- Greek Yogurt Berry Parfait
+- Zucchini Turkey Meatballs
+
+### 🍲 6 Comfort Food Dishes
+Examples include:
+- Chicken Noodle Soup
+- Shepherd’s Pie
+- Macaroni and Cheese
+- Beef Stroganoff
+- Arroz Caldo
+- Baked Ziti
+
+---
+
+## 📌 Data Fields Included
+Each enhanced food entry may include:
+
+- `id`
+- `name`
+- `text`
+- `region`
+- `type`
+- `ingredients`
+- `cooking_method`
+- `nutritional_benefits`
+- `cultural_background`
+- `regional_variations`
+- `dietary_tags`
+- `allergens`
+
+This richer structure improves the system’s ability to answer:
+
+- cuisine-based questions
+- nutritional preference questions
+- dietary restriction queries
+- comfort food exploration
+- cooking method searches
+- ingredient-based discovery
+
+---
+
+# 🖥️ Local Version Setup (Week 2)
+
+## 📁 Location
+
+```
+</> bash
+local-version/
+```
+
+## Purpose
+This is the original local implementation of the food RAG system using **ChromaDB**.
+
+## Run the local version
+From the root project folder:
+
+```
+</>bash
+cd local-version
 python rag_run.py
 ```
 
-If it's the first time, it will:
-
-* Create `foods.json` if missing
-* Generate embeddings for all food items
-* Load them into ChromaDB
-* Run a few example questions
+## Local Version Notes
+- Uses local vector retrieval
+- Represents the original Week 2 implementation
+- Preserved for comparison against the cloud version
 
 ---
 
-## 📁 File Structure
+# ☁️ Cloud Version Setup (Week 3)
+
+## 📁 Location
 
 ```
-rag-food/
-├── rag_run.py       # Main app script
-├── foods.json       # Food knowledge base (created if missing)
-├── README.md        # This file
+</> bash
+cloud-version/
 ```
 
----
+## Purpose
+This is the migrated cloud implementation using:
 
-## 🧠 How It Works (Step-by-Step)
+- **Upstash Vector**
+- **Groq API**
 
-1. **Data** is loaded from `foods.json`
-2. Each entry is embedded using Ollama's `mxbai-embed-large`
-3. Embeddings are stored in ChromaDB
-4. When you ask a question:
-
-   * The question is embedded
-   * The top 1–2 most relevant chunks are retrieved
-   * The context + question is passed to `llama3.2`
-   * The model answers using that info only
-
----
-
-## 🔍 Try Custom Questions
-
-You can update `rag_run.py` to include your own questions like:
-
-```python
-print(rag_query("What is tandoori chicken?"))
-print(rag_query("Which foods are spicy and vegetarian?"))
-```
-
----
-
-## 🚀 Next Ideas
-
-* Swap in larger datasets (Wikipedia articles, recipes, PDFs)
-* Add a web UI with Gradio or Flask
-* Cache embeddings to avoid reprocessing on every run
-
----
-
-## 👨‍🍳 Credits
-
-Made by Callum using:
-
-* [Ollama](https://ollama.com)
-* [ChromaDB](https://www.trychroma.com)
-* [mxbai-embed-large](https://ollama.com/library/mxbai-embed-large)
-* Indian food inspiration 🍛
-
----
-
-# RAG Food System Enhancement
-
-## Author
-👩🏻‍💼 Joanna Marie Fesalbon
-
----
-
-## 💻 Project Overview 
-
-   This project enhances the RAG (Retrieval-Augmented Generation) Food System by expanding its food database with 15 additional food entries. The goal of this enhancement is to improve the system’s ability to answer diverse food-related queries using semantic search and vector embeddings.
-
-   The added entries include Filipino dishes, healthy Filipino food options, and unique international dishes. These additions allow the RAG system to retrieve more relevant information and generate more accurate responses when users ask questions related to food, nutrition, and cultural cuisine.
-
-This project also demonstrates the use of Git and GitHub for professional development workflows including repository forking, committing changes, resolving merge conflicts, and pushing updates to a remote repository.
-
----
-
-# 🍽️ Added Food Items 
-
-## 🍜 Filipino Cuisine 
-1. Chicken Adobo  
-2. Sinigang  
-3. Pancit Canton  
-4. Kare-Kare  
-5. Lechon
-   
-## 🥗 Healthy Filipino Foods 
-6. Chopsuey  
-7. Chicken Tinola  
-8. Ginisang Monggo  
-9. Ensaladang Talong  
-10. Fresh Lumpiang Ubod
-
-## 🌏 International Dishes 
-11. Paella (Spain)
-12. Goulash (HUngary)
-13. Tagine (Morocco)
-14. Pierogi (Poland)
-15. Ratatouille (France)
-
-These additions improve the diversity of the food knowledge base and allow the system to respond to a wider range of queries.
-
----
-
-## 🗂️ Project Structure
+## Run the cloud version
+From the root project folder:
 
 ```
-ragfood/
-│
-├── foods.json      # Food database containing food information
-├── rag_run.py      # Python script to run the RAG system
-├── README.md       # Project documentation
-├── .gitignore      # Git ignore configuration
-├── Q1.png          # Sample query result
-├── Q2.png          # Sample query result
-└── Q3.png          # Sample query result
-```
-
----
-
-## 💻🖱️ Installation and Setup
-
----
-
-Follow these steps to run the project locally.
-
-Clone the Repository
-
-### 1. Clone the Repository
-
-```
-</> Bash
-git clone https://github.com/joannafesalbon02/ragfood
-```
-
-### 2. Navigate to the Project Folder
-
-```
-Command
-cd ragfood
-```
-
-### 3. Run the RAG System
-
-```
-Command
+</> bash
+cd cloud-version
 python rag_run.py
 ```
 
-After running the script, the system will allow users to ask questions related to the food items stored in the database.
-
 ---
 
-# 🧐 Sample Queries Tested
+# 🔐 Environment Variables Configuration
 
-The RAG system was tested with different types of food-related questions to evaluate how well it retrieves information from the database.
+The cloud version requires a `.env` file inside:
 
-Example queries include:
-- What is Chicken Adobo?
-- Tell me about sinigang.
-- Which foods are healthy?
-
-These tests confirm that the RAG system can successfully retrieve and generate responses using the enhanced food dataset.
-
-Below are sample queries executed in the RAG Food System demonstrating how the system retrieves food information from the enhanced dataset.
-
-## 💾 Sample Query Results:
-
-### Query 1
-[Query 1 Result](Q1.png)
-
-### Query 2
-[Query 2 Result](Q2.png)
-
-### Query 3
-[Query 3 Result](Q3.png)
-
----
 ```
-## Enhancements Made
-
-The following improvements were implemented in this project:
-
-- Added 15 new food items to the database
-- Expanded the food dataset for better retrieval
-- Implemented Git workflow using forked repository
-- Added documentation and sample query results
+</> bash
+cloud-version/
 ```
+
+## Required variables
+
+```env
+UPSTASH_VECTOR_REST_URL=your_upstash_url_here
+UPSTASH_VECTOR_REST_TOKEN=your_upstash_token_here
+GROQ_API_KEY=your_groq_api_key_here
+```
+
+## Important
+This `.env` file is **not uploaded publicly** for security reasons.
+
 ---
-# 📝 Personal Reflection
 
-   Working on this project helped me understand how Retrieval-Augmented Generation (RAG) systems function by combining a knowledge database with language models. Before doing this activity, I only had a basic idea of how AI could answer questions using stored information. Through building and testing the RAG Food System, I was able to see how an AI model can retrieve relevant data from a structured dataset and use it to generate more accurate and meaningful responses.
+# 📦 Cloud Version Dependencies
 
-   One of the most interesting parts of the project was adding new food items to the database and observing how the system responded to different queries. Instead of relying only on exact keyword matches, the system uses vector embeddings and semantic similarity to find related information. This means the system can understand the context of a user’s question and return relevant results even if the wording of the query is slightly different. Seeing this process in action helped me better understand how modern AI systems retrieve and process information.
+Install dependencies inside the cloud version:
 
-   Another valuable learning experience was using Git and GitHub for version control. I practiced important development steps such as forking a repository, committing changes, resolving merge conflicts, and pushing updates to my remote repository. These tasks helped me understand how developers manage project versions and collaborate on shared codebases.
+**Manually install core dependencies:**
 
-   Overall, this project improved my understanding of AI-powered retrieval systems and strengthened my technical skills in Python, Git, and repository management. It also showed me how RAG technology can be applied to real-world systems such as intelligent search tools and AI-based knowledge assistants.
+```
+</> bash
+pip install python-dotenv upstash-vector groq
+```
 
+---
+
+# 🧪 Testing and Query Validation
+
+The cloud version was tested using a wide range of food-related natural language queries.
+
+## Testing Evidence
+Testing screenshots are stored in:
+
+```
+</> bash
+cloud-version/docs/Week 3 Test Queries/
+```
+
+This includes **15 test query screenshots** used to validate retrieval quality and answer generation.
+
+---
+
+## Query Testing Categories
+
+### Semantic Similarity Queries
+Example:
+- “I want something healthy and egg-based from North Africa, Any suggestion?”
+
+### Multi-Criteria Queries
+Example:
+- “Which baked Mediterranean dish is made with eggplant and meat?”
+
+### Nutritional Queries
+Example:
+- “I want plant-based bowl that's filling and nutritious”
+
+### Cultural Exploration Queries
+Example:
+- “Which brazilian comfort food is known for black beans and meat”
+
+### Cooking Method Queries
+Example:
+- “Which dish ”
+
+---cooks eggs directly in tomato sauce?"
+
+# 📈 Performance and Quality Assessment
+
+Comparison and quality evaluation are documented in:
+
+```bash
+cloud-version/docs/Comparison and Quality Assesment.txt
+```
+
+This file includes:
+- retrieval observations
+- answer quality review
+- response comparison
+- cloud vs local performance discussion
+
+---
+
+# ⚖️ Local vs Cloud Comparison
+
+| Category | Local Version | Cloud Version |
+|---------|--------------|--------------|
+| Vector Storage | ChromaDB | Upstash Vector |
+| LLM / Generation | Local / Original Workflow | Groq API |
+| Deployment Style | Local-only | Cloud-ready |
+| Scalability | Limited | Better |
+| Retrieval Workflow | Local database | Cloud vector retrieval |
+| Setup Complexity | Moderate | Moderate with API setup |
+| Speed | Slower / setup-heavy | Faster response generation |
+| Portfolio Readiness | Basic | Professional / deployable |
+
+## **High-Level Architecture Comparison**
+
+| Component | Previous Local Version | New Cloud Version | Reason for Change |
+|----------|-------------------------|-------------------|------------------|
+| Vector Database | ChromaDB | Upstash Vector Database | Managed cloud vector storage |
+| Embeddings | Ollama local embeddings | Upstash vector search workflow | Removes local embedding dependency |
+| LLM | Ollama (`llama3.2`) | Groq (`llama-3.1-8b-instant`) | Faster, cloud-based inference |
+| Data Storage | Local JSON + local DB | Local JSON + cloud vector DB | More scalable retrieval layer |
+| Deployment Style | Local-only | Cloud-ready | Better for real-world usage |
+
+---
+
+# 🧾 Example Comparison Summary
+
+## Cloud Version Example
+**Query:**  
+> Which cheesy baked pasta dish is perfect for family meals?
+
+### Top Retrieved Matches
+- Baked Ziti
+- Macaroni and Cheese
+- Moussaka
+- Beef Stroganoff
+
+### Result
+The cloud version successfully identified **Baked Ziti** as the most appropriate answer.
+
+### Performance
+**Retrieval + Generation Time:** ~1.18 seconds
+
+### Quality
+- **Accuracy:** High
+- **Relevance:** High
+
+---
+
+## Local Version Example
+**Query:**  
+> What is Chicken Adobo?
+
+### Top Retrieved Matches
+- Chicken Adobo detailed description
+- Adobo variant
+- One less relevant result
+
+### Result
+The local version returned a correct explanation of Chicken Adobo.
+
+### Performance
+Slower overall due to more local processing and setup overhead.
+
+### Quality
+- **Accuracy:** Good
+- **Relevance:** Mostly good, but with one unrelated retrieval
+
+---
+
+# 🧠 Migration Learnings
+
+This migration project demonstrated several important practical lessons:
+
+- Cloud vector databases simplify retrieval infrastructure
+- Better metadata improves semantic search performance
+- Cloud-hosted LLMs can significantly improve response speed
+- Clean repository organization makes technical projects easier to present
+- Testing is important not only for correctness, but also for relevance and usability
+
+---
+
+# 📂 Documentation Included
+
+## Available documentation in this repository:
+
+### Migration Planning
+```
+</> bash
+cloud-version/docs/MIGRATION_PLAN.md
+```
+
+### Comparison and Quality Assessment
+```
+</> bash
+cloud-version/docs/Comparison and Quality Assesment.txt
+```
+
+### Test Query Evidence
+```
+</> bash
+cloud-version/docs/Week 3 Test Queries/
+```
+
+### Dependency Reference
+
+```
+</> bash
+pip install python-dotenv upstash-vector groq
+```
+
+---
+
+# 🛠️ Troubleshooting Guide
+
+## 1. `ModuleNotFoundError`
+### Cause:
+A required package is not installed.
+
+### Fix:
+```
+</> bash
+pip install python-dotenv upstash-vector groq
+```
+
+---
+
+## 2. `.env` variables not loading
+### Cause:
+The `.env` file is missing or placed in the wrong folder.
+
+### Fix:
+Make sure `.env` is inside:
+
+```
+</> bash
+cloud-version/
+```
+
+and contains:
+
+```env
+UPSTASH_VECTOR_REST_URL=your_upstash_url_here
+UPSTASH_VECTOR_REST_TOKEN=your_upstash_token_here
+GROQ_API_KEY=your_groq_api_key_here
+```
+
+---
+
+## 3. Upstash connection errors
+### Cause:
+Invalid URL or token.
+
+### Fix:
+Double-check your Upstash Vector credentials.
+
+---
+
+## 4. Groq API errors
+### Cause:
+Invalid or expired API key.
+
+### Fix:
+Generate a valid API key and update your `.env`.
+
+---
+
+## 5. Wrong folder when running files
+### Cause:
+Running `rag_run.py` from the wrong directory.
+
+### Fix:
+Use the correct folder:
+
+### For local:
+```
+</> bash
+cd local-version
+python rag_run.py
+```
+
+### For cloud:
+```
+</> bash
+cd cloud-version
+python rag_run.py
+```
+
+---
+
+# 🚀 Version Control and Development Workflow
+
+## Branch Used
+```
+</>bash
+cloud-migration
+```
+
+## Git Workflow Completed
+- created a dedicated migration branch
+- organized local and cloud implementations
+- documented migration and comparison
+- prepared the project for portfolio presentation
+
+---
+
+# 🏷️ Suggested Release Tags
+
+Recommended tags for milestone tracking:
+
+```
+</> bash
+v1.0  → local-only implementation
+v2.0  → cloud-migration implementation
+```
+
+---
+
+# 📚 Final Reflection
+This project shows the complete transition from a **basic local RAG prototype** into a **more scalable and portfolio-ready cloud RAG system**.
+
+It demonstrates not only code migration, but also:
+- retrieval design thinking
+- cloud integration
+- structured testing
+- documentation discipline
+- repository presentation skills
+
+The final result is a more complete and professional Retrieval-Augmented Generation project centered around food discovery, information retrieval, and semantic search.
