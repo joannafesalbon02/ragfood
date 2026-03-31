@@ -205,12 +205,12 @@ The food database was expanded to support:
 The food dataset was expanded and enriched to improve retrieval quality and answer relevance.
 
 ### Database includes:
-- **35+ total food entries** 
+- Enhanced food database showcase (35 items) 15 in Week 2 and 20 in Week 3
 - **20 newly added enhanced food items**
-- broader cuisine representation
-- more health-conscious options
-- more comfort food entries
-- improved metadata for semantic retrieval
+- Broader cuisine representation
+- More health-conscious options
+- More comfort food entries
+- Improved metadata for semantic retrieval
 
 ---
 
@@ -265,12 +265,12 @@ Each enhanced food entry may include:
 
 This richer structure improves the system’s ability to answer:
 
-- cuisine-based questions
-- nutritional preference questions
-- dietary restriction queries
-- comfort food exploration
-- cooking method searches
-- ingredient-based discovery
+- Cuisine-based questions
+- Nutritional preference questions
+- Dietary restriction queries
+- Comfort food exploration
+- Cooking method searches
+- Ingredient-based discovery
 
 ---
 
@@ -290,7 +290,7 @@ This is the original local implementation of the food RAG system using **ChromaD
 From the root project folder:
 
 ```
-</>bash
+</> bash
 cd local-version
 python rag_run.py
 ```
@@ -432,7 +432,7 @@ This file includes:
 | Speed | Slower / setup-heavy | Faster response generation |
 | Portfolio Readiness | Basic | Professional / deployable |
 
-## **High-Level Architecture Comparison**
+# ⚡ High-Level Architecture Comparison
 
 | Component | Previous Local Version | New Cloud Version | Reason for Change |
 |----------|-------------------------|-------------------|------------------|
@@ -613,15 +613,15 @@ python rag_run.py
 
 ## Branch Used
 ```
-</>bash
+</> bash
 cloud-migration
 ```
 
 ## Git Workflow Completed
-- created a dedicated migration branch
-- organized local and cloud implementations
-- documented migration and comparison
-- prepared the project for portfolio presentation
+- Created a dedicated migration branch
+- Organized local and cloud implementations
+- Documented migration and comparison
+- Prepared the project for portfolio presentation
 
 ---
 
@@ -641,10 +641,10 @@ v2.0  → cloud-migration implementation
 This project shows the complete transition from a **basic local RAG prototype** into a **more scalable and portfolio-ready cloud RAG system**.
 
 It demonstrates not only code migration, but also:
-- retrieval design thinking
-- cloud integration
-- structured testing
-- documentation discipline
-- repository presentation skills
+- Retrieval design thinking
+- Cloud integration
+- Structured testing
+- Documentation discipline
+- Repository presentation skills
 
-The final result is a more complete and professional Retrieval-Augmented Generation project centered around food discovery, information retrieval, and semantic search.
+**The final result is a more complete and professional Retrieval-Augmented Generation project centered around food discovery, information retrieval, and semantic search.**
