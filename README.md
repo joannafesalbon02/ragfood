@@ -399,9 +399,7 @@ Example:
 
 ### Cooking Method Queries
 Example:
-- “Which dish ”
-
----cooks eggs directly in tomato sauce?"
+- “Which dish cooks eggs directly in tomato sauce?"
 
 # 📈 Performance and Quality Assessment
 
