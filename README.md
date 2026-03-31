@@ -44,8 +44,9 @@ In this project, the knowledge base is a curated food dataset containing descrip
 
 ---
 
-# 🏗️ Repository Structure
+# 📁 Repository Structure
 
+```
 RAGFOOD-MAIN
 ├── .vscode
 ├── chroma_db
@@ -66,6 +67,7 @@ RAGFOOD-MAIN
 ├── rag_run.py
 ├── .gitignore
 └── README.md
+```
 
 ---
 
