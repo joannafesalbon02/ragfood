@@ -1,0 +1,42 @@
+**Comparison: Cloud vs Local Version**
+
+**Cloud Version**
+
+Query: “Which cheesy baked pasta dish is perfect for family meals?”
+
+Top matches retrieved:
+
+Baked Ziti (Region: Italy / Italian-American, Type: Comfort Food Main Course)
+Macaroni and Cheese (Region: United States, Type: Comfort Food Main Course)
+Moussaka (Region: Greece, Type: Comfort Food Main Course)
+Unknown Food (Region: France, Type: Vegetable Dish)
+Beef Stroganoff (Region: Russia / Eastern Europe, Type: Comfort Food Main Course)
+Retrieval + Generation Time: 1.18 seconds
+
+LLM Answer:
+Baked ziti is a classic comfort food that is perfect for family meals. It's rich, cheesy, and easy to serve, making it an ideal choice for family dinners or gatherings. Its ability to absorb the sauce while baking creates a deeply savory and satisfying texture.
+
+Quality Assessment:
+
+Accuracy: Correctly identifies the best dish for the query.
+Relevance: Highly relevant suggestions and focused answer.
+
+
+**Local Version**
+
+Query: “What is Chicken Adobo?”
+
+Top matches retrieved:
+
+Source 1 (ID: 76): Detailed description of Chicken Adobo with ingredients and cooking method.
+Source 2 (ID: 31): Short description of Adobo marinated in vinegar, soy sauce, and garlic.
+Source 3 (ID: 17): Butter Chicken description (less relevant).
+Retrieval + Generation Time: Slower; embedding setup per item ~10–40 seconds
+
+LLM Answer:
+ Chicken Adobo is a dish made by marinating chicken in a flavorful mixture of soy sauce, vinegar, garlic, bay leaves, and black pepper, then slowly cooking it in a sauce that allows the chicken to absorb its rich flavors.
+
+Quality Assessment:
+
+Accuracy:Correctly explains what Chicken Adobo is.
+Relevance:Mostly relevant; one retrieved source (Butter Chicken) is unrelated. 

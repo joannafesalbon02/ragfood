@@ -1,0 +1,822 @@
+[
+  {
+    "id": "1",
+    "text": "A banana is a yellow fruit that is soft and sweet.",
+    "region": "Tropical",
+    "type": "Fruit"
+  },
+  {
+    "id": "2",
+    "text": "A lemon is yellow and very sour.",
+    "region": "Tropical",
+    "type": "Fruit"
+  },
+  {
+    "id": "3",
+    "text": "A chili pepper is red and extremely spicy.",
+    "region": "Various",
+    "type": "Spice"
+  },
+  {
+    "id": "4",
+    "text": "An apple can be red, green, or yellow and has a sweet taste.",
+    "region": "Global",
+    "type": "Fruit"
+  },
+  {
+    "id": "5",
+    "text": "Biryani is a flavorful Indian rice dish made with spices, rice, and usually meat or vegetables.",
+    "region": "Hyderabad",
+    "type": "Main Course"
+  },
+  {
+    "id": "6",
+    "text": "Samosa is a fried or baked pastry with a spicy potato filling, popular as a snack in India.",
+    "region": "North India",
+    "type": "Snack"
+  },
+  {
+    "id": "7",
+    "text": "Paneer butter masala is a creamy tomato-based curry made with Indian cottage cheese.",
+    "region": "Punjab",
+    "type": "Main Course"
+  },
+  {
+    "id": "8",
+    "text": "Masala dosa is a thin, crispy fermented crepe filled with spicy mashed potatoes.",
+    "region": "South India",
+    "type": "Breakfast"
+  },
+  {
+    "id": "9",
+    "text": "Chole is a spicy chickpea curry from North India, often eaten with rice or bhature.",
+    "region": "North India",
+    "type": "Main Course"
+  },
+  {
+    "id": "10",
+    "text": "Rasgulla is a spongy dessert made from ball-shaped dumplings of chhena cooked in light syrup.",
+    "region": "Bengal",
+    "type": "Dessert"
+  },
+  {
+    "id": "11",
+    "text": "Naan is a soft and fluffy flatbread that is traditionally baked in a tandoor.",
+    "region": "North India",
+    "type": "Bread"
+  },
+  {
+    "id": "12",
+    "text": "Tandoori chicken is chicken marinated in yogurt and spices, roasted in a tandoor.",
+    "region": "Punjab",
+    "type": "Main Course"
+  },
+  {
+    "id": "13",
+    "text": "Gulab jamun is a deep-fried milk-solid ball soaked in sweet syrup, served as dessert.",
+    "region": "India",
+    "type": "Dessert"
+  },
+  {
+    "id": "14",
+    "text": "Pav bhaji is a spicy vegetable mash served with soft buttered buns.",
+    "region": "Mumbai",
+    "type": "Snack"
+  },
+  {
+    "id": "15",
+    "text": "Raita is a yogurt-based condiment that cools down spicy dishes.",
+    "region": "India",
+    "type": "Condiment"
+  },
+  {
+    "id": "16",
+    "text": "Dhokla is a soft and fluffy savory cake made from fermented rice and chickpea flour.",
+    "region": "Gujarat",
+    "type": "Snack"
+  },
+  {
+    "id": "17",
+    "text": "Butter chicken is a rich tomato gravy dish with tender pieces of marinated chicken.",
+    "region": "Delhi",
+    "type": "Main Course"
+  },
+  {
+    "id": "18",
+    "text": "Lassi is a cold yogurt drink blended with sugar, salt, or fruits like mango.",
+    "region": "Punjab",
+    "type": "Drink"
+  }, 
+   {
+    "id": "19",
+    "text": "Momo is a type of South Asian dumpling popular in Nepal, filled with meat or vegetables and served with spicy chutney.",
+    "region": "Nepal",
+    "type": "Snack"
+  },
+  {
+    "id": "20",
+    "text": "Sel roti is a traditional homemade, sweet, ring-shaped rice bread from Nepal.",
+    "region": "Nepal",
+    "type": "Dessert"
+  },
+  {
+    "id": "21",
+    "text": "Hilsa curry is a traditional Bengali dish made with hilsa fish and mustard gravy.",
+    "region": "Bangladesh",
+    "type": "Main Course"
+  },
+  {
+    "id": "22",
+    "text": "Bhuna khichuri is a spiced rice and lentil dish often served with beef curry in Bangladesh.",
+    "region": "Bangladesh",
+    "type": "Main Course"
+  },
+  {
+    "id": "23",
+    "text": "Nihari is a slow-cooked stew of beef or lamb, eaten as breakfast in Pakistan.",
+    "region": "Pakistan",
+    "type": "Main Course"
+  },
+  {
+    "id": "24",
+    "text": "Chicken Karahi is a spicy curry cooked in a wok-like pan called a karahi, popular in Pakistan.",
+    "region": "Pakistan",
+    "type": "Main Course"
+  },
+  {
+    "id": "25",
+    "text": "Pad Thai is a stir-fried noodle dish with shrimp, peanuts, and tamarind sauce, one of Thailand's national dishes.",
+    "region": "Thailand",
+    "type": "Main Course"
+  },
+  {
+    "id": "26",
+    "text": "Tom Yum is a hot and sour Thai soup made with shrimp, lemongrass, and lime juice.",
+    "region": "Thailand",
+    "type": "Soup"
+  },
+  {
+    "id": "27",
+    "text": "Pho is a Vietnamese noodle soup consisting of broth, rice noodles, herbs, and meat.",
+    "region": "Vietnam",
+    "type": "Soup"
+  },
+  {
+    "id": "28",
+    "text": "Nasi Goreng is Indonesian-style fried rice often cooked with kecap manis, garlic, shallots, and chili.",
+    "region": "Indonesia",
+    "type": "Main Course"
+  },
+  {
+    "id": "29",
+    "text": "Rendang is a spicy meat dish slow-cooked in coconut milk and spices, originating from Indonesia.",
+    "region": "Indonesia",
+    "type": "Main Course"
+  },
+  {
+    "id": "30",
+    "text": "Nasi lemak is Malaysia's national dish consisting of fragrant rice cooked in coconut milk, served with sambal, anchovies, and egg.",
+    "region": "Malaysia",
+    "type": "Main Course"
+  },
+  {
+    "id": "31",
+    "text": "Adobo is a Filipino dish made by marinating meat in vinegar, soy sauce, and garlic, then simmering it.",
+    "region": "Philippines",
+    "type": "Main Course"
+  },
+  {
+    "id": "32",
+    "text": "Halo-halo is a Filipino dessert made from crushed ice, evaporated milk, and mixed ingredients like sweet beans, fruits, and jellies.",
+    "region": "Philippines",
+    "type": "Dessert"
+  }, 
+    {
+    "id": "33",
+    "text": "Peking duck is a famous Beijing dish featuring crispy roasted duck served with pancakes, hoisin sauce, and scallions.",
+    "region": "China",
+    "type": "Main Course"
+  },
+  {
+    "id": "34",
+    "text": "Kung Pao chicken is a spicy stir-fry dish made with chicken, peanuts, vegetables, and chili peppers.",
+    "region": "China",
+    "type": "Main Course"
+  },
+  {
+    "id": "35",
+    "text": "Mapo tofu is a Sichuan dish featuring soft tofu in a spicy chili and bean-based sauce, typically with minced pork.",
+    "region": "Sichuan, China",
+    "type": "Main Course"
+  },
+  {
+    "id": "36",
+    "text": "Xiao long bao are Chinese soup dumplings filled with meat and hot broth, typically served in a bamboo steamer.",
+    "region": "Shanghai",
+    "type": "Snack"
+  },
+  {
+    "id": "37",
+    "text": "Chow mein is a stir-fried noodle dish made with vegetables and sometimes meat or seafood.",
+    "region": "China",
+    "type": "Noodle"
+  },
+  {
+    "id": "38",
+    "text": "Hot and sour soup is a Chinese soup made with mushrooms, tofu, bamboo shoots, and egg, flavored with vinegar and white pepper.",
+    "region": "China",
+    "type": "Soup"
+  },
+  {
+    "id": "39",
+    "text": "Dim sum refers to a variety of small Chinese dishes served with tea, including dumplings, buns, and rolls.",
+    "region": "Cantonese, China",
+    "type": "Snack"
+  },
+  {
+    "id": "40",
+    "text": "Mooncake is a traditional Chinese pastry filled with lotus seed paste or red bean, eaten during the Mid-Autumn Festival.",
+    "region": "China",
+    "type": "Dessert"
+  }, 
+  {
+  "id": "41",
+  "text": "Kimchi is a traditional Korean side dish made from fermented vegetables, usually cabbage and radish, with chili pepper and garlic.",
+  "region": "Korea",
+  "type": "Side Dish"
+},
+{
+  "id": "42",
+  "text": "Bibimbap is a Korean mixed rice dish topped with sautéed vegetables, sliced meat, a fried egg, and chili paste.",
+  "region": "Korea",
+  "type": "Main Course"
+},
+{
+  "id": "43",
+  "text": "Tteokbokki is a popular Korean street food made of chewy rice cakes in a spicy red sauce.",
+  "region": "Korea",
+  "type": "Snack"
+}, 
+{
+  "id": "44",
+  "text": "Beef noodle soup is a beloved Taiwanese dish made with braised beef, vegetables, and noodles in a flavorful broth.",
+  "region": "Taiwan",
+  "type": "Soup"
+},
+{
+  "id": "45",
+  "text": "Lu rou fan is a classic Taiwanese comfort food of minced pork belly cooked in soy sauce, served over rice.",
+  "region": "Taiwan",
+  "type": "Main Course"
+},
+{
+  "id": "46",
+  "text": "Bubble tea is a Taiwanese drink made with tea, milk, and chewy tapioca pearls.",
+  "region": "Taiwan",
+  "type": "Drink"
+}, 
+{
+  "id": "47",
+  "text": "Char siu is a Cantonese-style barbecued pork known for its sweet and savory glaze.",
+  "region": "Hong Kong",
+  "type": "Main Course"
+},
+{
+  "id": "48",
+  "text": "Egg tarts are a popular Hong Kong dessert consisting of a flaky pastry crust filled with egg custard.",
+  "region": "Hong Kong",
+  "type": "Dessert"
+},
+{
+  "id": "49",
+  "text": "Wonton noodles are a Hong Kong dish made with thin egg noodles and wontons in a clear broth.",
+  "region": "Hong Kong",
+  "type": "Noodle"
+}, 
+{
+  "id": "50",
+  "text": "Meat pie is an iconic Australian dish consisting of a flaky pastry filled with minced meat and gravy.",
+  "region": "Australia",
+  "type": "Snack"
+},
+{
+  "id": "51",
+  "text": "Lamingtons are sponge cakes coated in chocolate and rolled in coconut, a popular Australian dessert.",
+  "region": "Australia",
+  "type": "Dessert"
+} ,
+{
+  "id": "52",
+  "text": "Pavlova is a meringue-based dessert topped with fresh fruit and cream, considered a national dish of New Zealand.",
+  "region": "New Zealand",
+  "type": "Dessert"
+},
+{
+  "id": "53",
+  "text": "Hangi is a traditional Māori method of cooking meat and vegetables in an underground oven.",
+  "region": "New Zealand",
+  "type": "Main Course"
+},
+{
+  "id": "54",
+  "text": "Palusami is a Polynesian dish of taro leaves filled with coconut cream and sometimes meat, baked in banana leaves.",
+  "region": "Samoa, South Pacific",
+  "type": "Main Course"
+},
+{
+  "id": "55",
+  "text": "Oka is a Samoan raw fish salad marinated in citrus and coconut milk, similar to ceviche.",
+  "region": "Samoa, South Pacific",
+  "type": "Appetizer"
+},
+{
+  "id": "56",
+  "text": "Lovo is a Fijian feast where food is wrapped in banana leaves and cooked in an earth oven.",
+  "region": "Fiji, South Pacific",
+  "type": "Main Course"
+}
+,
+{
+  "id": "57",
+  "text": "Kokoda is a Fijian dish of raw fish marinated in lime juice and coconut milk, similar to ceviche.",
+  "region": "Fiji, South Pacific",
+  "type": "Appetizer"
+},
+{
+  "id": "58",
+  "text": "Poke is a Hawaiian dish of diced raw fish, typically seasoned with soy sauce and sesame oil.",
+  "region": "Hawaii, USA",
+  "type": "Appetizer"
+},
+{
+  "id": "59",
+  "text": "Spam musubi is a Hawaiian snack made of rice and Spam wrapped in seaweed.",
+  "region": "Hawaii, USA",
+  "type": "Snack"
+},
+{  "id": "60",
+  "text": "Loco moco is a Hawaiian dish consisting of rice topped with a hamburger patty, fried egg, and brown gravy.",
+  "region": "Hawaii, USA",
+  "type": "Main Course"
+},
+{
+  "id": "61",
+  "text": "Sushi is a Japanese dish of vinegared rice combined with seafood, vegetables, and sometimes tropical fruits.",
+  "region": "Japan",
+  "type": "Main Course"
+},
+{
+  "id": "62",
+  "text": "Ramen is a Japanese noodle soup dish with Chinese-style wheat noodles served in a meat or fish-based broth.",
+  "region": "Japan",
+  "type": "Main Course"
+},
+{
+  "id": "63",
+  "text": "Tempura is a Japanese dish of seafood or vegetables that have been battered and deep-fried.",
+  "region": "Japan",
+  "type": "Main Course"
+},
+{
+  "id": "64",
+  "text": "Miso soup is a traditional Japanese soup consisting of a stock called dashi into which softened miso paste is mixed.",
+  "region": "Japan",
+  "type": "Soup"
+},
+{
+  "id": "65",
+  "text": "Okonomiyaki is a savory Japanese pancake containing a variety of ingredients.",
+  "region": "Japan",
+  "type": "Main Course"
+},
+{
+  "id": "66",
+  "text": "Hummus is a Middle Eastern dip or spread made from cooked, mashed chickpeas blended with tahini, olive oil, lemon juice, and garlic.",
+  "region": "Middle East",
+  "type": "Appetizer"
+},
+{
+  "id": "67",
+  "text": "Falafel consists of deep-fried balls of ground chickpeas or fava beans, typically served in pita bread.",
+  "region": "Middle East",
+  "type": "Main Course"
+},
+{
+  "id": "68",
+  "text": "Shawarma is a Middle Eastern meat preparation where thin slices of lamb, chicken, or beef are stacked and roasted on a vertical rotisserie.",
+  "region": "Middle East",
+  "type": "Main Course"
+},
+{
+  "id": "69",
+  "text": "Tabbouleh is a Levantine vegetarian salad made of finely chopped parsley, tomatoes, mint, and bulgur.",
+  "region": "Middle East",
+  "type": "Salad"
+},
+{
+  "id": "70",
+  "text": "Baklava is a rich, sweet dessert pastry made of layers of filo filled with chopped nuts and sweetened with syrup or honey.",
+  "region": "Middle East",
+  "type": "Dessert"
+},
+{
+  "id": "71",
+  "text": "Buuz are Mongolian steamed dumplings filled with minced meat, typically mutton or beef.",
+  "region": "Mongolia",
+  "type": "Main Course"
+},
+{
+  "id": "72",
+  "text": "Khorkhog is a Mongolian barbecue dish where meat is cooked with hot stones inside a sealed container.",
+  "region": "Mongolia",
+  "type": "Main Course"
+},
+{
+  "id": "73",
+  "text": "Airag is a traditional Mongolian alcoholic drink made from fermented mare's milk.",
+  "region": "Mongolia",
+  "type": "Beverage"
+},
+{
+  "id": "74",
+  "text": "Boortsog are Mongolian deep-fried cookies often served with tea or used as a dessert.",
+  "region": "Mongolia",
+  "type": "Dessert"
+},
+{
+  "id": "75",
+  "text": "Suutei tsai is a traditional Mongolian milk tea made with green tea, milk, water, and salt.",
+  "region": "Mongolia",
+  "type": "Beverage"
+},
+{
+  "id": "76",
+  "text": "Chicken Adobo is one of the most popular dishes in Filipino cuisine and is often considered the national dish of the Philippines. It is made by slowly cooking chicken in a flavorful mixture of soy sauce, vinegar, garlic, bay leaves, and black pepper. The cooking method allows the chicken to absorb the rich sauce. It is commonly served with steamed rice and represents comfort food in many Filipino households.",
+  "region": "Philippines",
+  "type": "Main Course"
+},
+{
+  "id": "77",
+  "text": "Sinigang is a famous Filipino sour soup known for its refreshing and tangy flavor. It is usually made with pork, shrimp, or fish together with vegetables such as kangkong, radish, eggplant, and tomatoes. The sour taste often comes from tamarind or other natural souring ingredients. Sinigang is nutritious because it contains fresh vegetables and protein and is commonly enjoyed during rainy days.",
+  "region": "Philippines",
+  "type": "Soup"
+},
+{
+  "id": "78",
+  "text": "Pancit Canton is a Filipino noodle dish made by stir frying egg noodles with vegetables, soy sauce, and meats such as chicken, pork, or shrimp. It is commonly prepared during celebrations and birthdays because noodles symbolize long life and good fortune in Filipino culture. The dish is colorful, flavorful, and easy to prepare for large family gatherings.",
+  "region": "Philippines",
+  "type": "Noodle Dish"
+},
+{
+  "id": "79",
+  "text": "Kare Kare is a traditional Filipino stew known for its thick and savory peanut sauce. It is commonly cooked with oxtail, beef, or vegetables and includes ingredients like eggplant, banana blossom, and long beans. Kare Kare is usually served with bagoong or fermented shrimp paste which adds a salty and rich flavor. It is often prepared during special occasions.",
+  "region": "Philippines",
+  "type": "Main Course"
+},
+{
+  "id": "80",
+  "text": "Lechon is a famous Filipino roasted pig dish that is commonly served during celebrations, festivals, and special occasions. The whole pig is seasoned and slowly roasted over charcoal until the skin becomes crispy and golden. The meat inside remains tender and flavorful. Lechon is considered a centerpiece dish in Filipino culture and is often served with a special liver based sauce.",
+  "region": "Philippines",
+  "type": "Main Course"
+},
+{
+  "id": "81",
+  "text": "Chopsuey is a healthy Filipino vegetable dish made by stir frying a variety of vegetables such as cabbage, carrots, cauliflower, bell peppers, and snow peas in a light savory sauce. It is sometimes combined with chicken, shrimp, or tofu for additional protein. Because it contains many vegetables, the dish is rich in vitamins, fiber, and important nutrients that support overall health.",
+  "region": "Philippines",
+  "type": "Healthy Vegetable Dish"
+},
+{
+  "id": "82",
+  "text": "Chicken Tinola is a nutritious Filipino soup made with chicken, green papaya, chili leaves, garlic, and ginger cooked in a clear broth. The soup is light yet flavorful and is known for its health benefits. Ginger helps support digestion while the vegetables provide essential vitamins and minerals. Tinola is commonly served hot with rice and is considered a comforting and healthy meal.",
+  "region": "Philippines",
+  "type": "Healthy Soup"
+},
+{
+  "id": "83",
+  "text": "Ginisang Monggo is a healthy Filipino dish made with mung beans cooked with garlic, onions, tomatoes, and leafy vegetables such as malunggay or spinach. Sometimes small pieces of fish or shrimp are added for extra flavor and protein. Mung beans are rich in fiber, protein, and nutrients, making this dish a nutritious and balanced meal often served in Filipino households.",
+  "region": "Philippines",
+  "type": "Healthy Main Course"
+},
+{
+  "id": "84",
+  "text": "Ensaladang Talong is a healthy Filipino salad made from grilled eggplant mixed with tomatoes, onions, and sometimes salted eggs. The eggplant is grilled until soft and smoky, then combined with fresh vegetables and a light vinegar dressing. This dish is rich in fiber and antioxidants, making it a nutritious side dish often served with grilled fish or meat.",
+  "region": "Philippines",
+  "type": "Healthy Salad"
+},
+{
+  "id": "85",
+  "text": "Fresh Lumpiang Ubod is a healthy Filipino dish made with heart of palm, carrots, green beans, and other vegetables wrapped in a soft crepe like wrapper. It is usually served with a light garlic peanut sauce. The vegetables provide vitamins, fiber, and nutrients, making this dish a lighter and healthier alternative compared to fried spring rolls.",
+  "region": "Philippines",
+  "type": "Healthy Vegetable Dish"
+},
+{
+  "id": "86",
+  "text": "Paella is a famous Spanish dish that originated in the Valencia region of Spain. It is traditionally cooked in a wide shallow pan and combines rice with ingredients such as seafood, chicken, vegetables, and aromatic spices including saffron. The rice absorbs the flavorful broth during cooking, creating a rich and savory meal. Paella is often prepared during gatherings and festivals and is commonly shared among family and friends.",
+  "region": "Spain",
+  "type": "Rice Dish"
+},
+{
+  "id": "87",
+  "text": "Goulash is a traditional Hungarian stew known for its deep flavor and comforting warmth. The dish is usually made by slowly cooking beef with onions, paprika, tomatoes, and other vegetables in a thick broth. Paprika gives goulash its distinctive color and mild smoky taste. It is often served with bread, noodles, or potatoes and is considered one of Hungary’s most well known national dishes.",
+  "region": "Hungary",
+  "type": "Stew"
+},
+{
+  "id": "88",
+  "text": "Tagine is a well known North African dish from Morocco that is named after the clay pot used to cook it. The dish typically combines meat such as chicken or lamb with vegetables, dried fruits, and aromatic spices like cinnamon, turmeric, and cumin. The ingredients are slowly simmered in the covered pot which allows the flavors to develop deeply. Tagine meals are often enjoyed during family gatherings and traditional celebrations.",
+  "region": "Morocco",
+  "type": "Slow Cooked Dish"
+},
+{
+  "id": "89",
+  "text": "Pierogi are traditional dumplings from Poland that are made by filling soft dough with ingredients such as potatoes, cheese, meat, mushrooms, or sweet fruits. The dumplings are first boiled and sometimes lightly fried in butter with onions for additional flavor. Pierogi are commonly served during holidays and cultural celebrations in Poland and are loved for their comforting taste and versatility.",
+  "region": "Poland",
+  "type": "Dumpling Dish"
+},
+{
+  "id": "90",
+  "text": "Ratatouille is a traditional vegetable dish from France made by slowly cooking ingredients such as eggplant, zucchini, tomatoes, bell peppers, onions, garlic, and herbs. The vegetables are gently simmered together until they become soft and flavorful while still maintaining their natural taste. Ratatouille is known for being nutritious and colorful. It can be served as a side dish with meat or fish, but it is also commonly enjoyed as a healthy main meal.",
+  "region": "France",
+  "type": "Vegetable Dish"
+},
+{
+    "id": "91",
+    "name": "Shakshuka",
+    "text": "Shakshuka is a savory dish made by gently poaching eggs in a rich sauce of tomatoes, onions, bell peppers, garlic, olive oil, and warming spices such as cumin and paprika. It is commonly served for breakfast or brunch with crusty bread, but many people also enjoy it as a light dinner. This dish is nutritious because it provides protein from eggs and antioxidants from tomatoes and peppers. It has become widely loved across North Africa and the Middle East for its simplicity, comforting flavor, and one-pan cooking method.",
+    "region": "North Africa / Middle East",
+    "type": "Health-Conscious Main Course",
+    "ingredients": ["eggs", "tomatoes", "bell peppers", "onions", "garlic", "olive oil", "cumin", "paprika"],
+    "cooking_method": "Simmered and poached",
+    "nutritional_benefits": ["high protein", "vitamin C", "iron", "healthy fats", "antioxidants"],
+    "cultural_background": "Shakshuka is believed to have North African roots and later became highly popular in Middle Eastern cuisine.",
+    "regional_variations": ["Tunisian shakshuka", "Israeli shakshuka", "Moroccan-style shakshuka"],
+    "dietary_tags": ["vegetarian", "high-protein", "gluten-free"],
+    "allergens": ["egg"]
+  },
+  {
+    "id": "92",
+    "name": "Moussaka",
+    "text": "Moussaka is a baked Mediterranean casserole traditionally made with layers of eggplant, seasoned minced meat, tomato sauce, and creamy béchamel. The dish is known for its rich flavor and soft layered texture, making it a comforting and filling meal. It is often served warm and can include potatoes or zucchini depending on regional style. Moussaka is popular in Greece and neighboring countries and reflects the use of olive oil, vegetables, and aromatic spices common in Mediterranean cooking traditions.",
+    "region": "Greece",
+    "type": "Comfort Food Main Course",
+    "ingredients": ["eggplant", "ground lamb or beef", "tomatoes", "onions", "garlic", "béchamel sauce", "olive oil"],
+    "cooking_method": "Layered and baked",
+    "nutritional_benefits": ["protein", "fiber", "calcium", "vitamin A"],
+    "cultural_background": "Moussaka is a beloved Greek comfort dish often served during family meals and festive gatherings.",
+    "regional_variations": ["Greek moussaka", "Balkan moussaka", "vegetarian moussaka"],
+    "dietary_tags": ["comfort food"],
+    "allergens": ["milk", "wheat"]
+  },
+  {
+    "id": "93",
+    "name": "Ceviche",
+    "text": "Ceviche is a fresh seafood dish made by marinating raw fish in citrus juice, usually lime, and combining it with onions, chili, herbs, and sometimes sweet potato or corn. The acidity of the citrus firms the fish and creates a bright, refreshing flavor. It is especially popular in coastal Latin American countries and is often enjoyed as an appetizer or light meal. Ceviche is valued for being high in protein, low in heavy fats, and full of fresh ingredients that highlight regional seafood traditions.",
+    "region": "Peru",
+    "type": "Health-Conscious Appetizer",
+    "ingredients": ["white fish", "lime juice", "red onion", "cilantro", "chili peppers", "salt"],
+    "cooking_method": "Citrus marinated",
+    "nutritional_benefits": ["lean protein", "omega-3", "vitamin C", "low-fat"],
+    "cultural_background": "Ceviche is a signature Peruvian dish deeply connected to coastal food culture and fresh seafood traditions.",
+    "regional_variations": ["Peruvian ceviche", "Ecuadorian ceviche", "Mexican ceviche"],
+    "dietary_tags": ["gluten-free", "high-protein", "low-carb"],
+    "allergens": ["fish"]
+  },
+  {
+    "id": "94",
+    "name": "Jerk Chicken",
+    "text": "Jerk chicken is a smoky and spicy Caribbean dish made by marinating chicken in a bold blend of allspice, thyme, garlic, scallions, ginger, and Scotch bonnet peppers before grilling or roasting. The result is deeply flavorful meat with heat, sweetness, and aromatic seasoning. It is often served with rice, beans, or plantains and is strongly associated with Jamaican food culture. The grilling process gives the chicken a charred, savory finish while preserving its juicy interior and rich marinade flavor.",
+    "region": "Jamaica",
+    "type": "World Cuisine Main Course",
+    "ingredients": ["chicken", "allspice", "thyme", "garlic", "ginger", "scallions", "Scotch bonnet peppers"],
+    "cooking_method": "Marinated and grilled",
+    "nutritional_benefits": ["high protein", "iron", "flavorful spices"],
+    "cultural_background": "Jerk cooking is a famous Jamaican technique rooted in indigenous and African culinary traditions.",
+    "regional_variations": ["grilled jerk chicken", "oven-baked jerk chicken", "jerk chicken with rice and peas"],
+    "dietary_tags": ["high-protein", "grilled"],
+    "allergens": []
+  },
+  {
+    "id": "95",
+    "name": "Feijoada",
+    "text": "Feijoada is a hearty Brazilian black bean stew traditionally cooked with beef, pork, sausages, and aromatic seasonings. It is slowly simmered until the beans become rich and creamy and the meats become tender and flavorful. The dish is usually served with rice, orange slices, greens, and toasted cassava flour. Feijoada is deeply comforting and is often associated with communal weekend meals, celebrations, and Brazilian culinary identity. It is filling, protein-rich, and known for its deeply savory flavor.",
+    "region": "Brazil",
+    "type": "Comfort Food Main Course",
+    "ingredients": ["black beans", "beef", "pork", "sausage", "garlic", "onion", "bay leaves"],
+    "cooking_method": "Slow simmered",
+    "nutritional_benefits": ["protein", "iron", "fiber", "energy-dense"],
+    "cultural_background": "Feijoada is widely considered one of Brazil's national dishes and is often shared in large family-style meals.",
+    "regional_variations": ["traditional feijoada", "lighter feijoada", "seafood feijoada"],
+    "dietary_tags": ["comfort food", "high-protein"],
+    "allergens": []
+  },
+  {
+    "id": "96",
+    "name": "Bobotie",
+    "text": "Bobotie is a South African baked dish made with curried minced meat, onions, fruit such as raisins, and a savory egg-based topping. The combination of sweet and savory flavors gives it a unique taste that reflects the multicultural influences of South African cuisine. It is usually served with yellow rice and chutney, making it both comforting and richly aromatic. Bobotie is often prepared for family meals and festive occasions and is considered one of South Africa’s most recognizable traditional dishes.",
+    "region": "South Africa",
+    "type": "Comfort Food Main Course",
+    "ingredients": ["ground beef", "onions", "eggs", "milk", "raisins", "curry powder", "bread"],
+    "cooking_method": "Seasoned and baked",
+    "nutritional_benefits": ["protein", "iron", "B vitamins"],
+    "cultural_background": "Bobotie reflects Cape Malay influence and is a well-known dish in South African culinary history.",
+    "regional_variations": ["beef bobotie", "lamb bobotie", "vegetarian bobotie"],
+    "dietary_tags": ["comfort food"],
+    "allergens": ["egg", "milk", "wheat"]
+  },
+  {
+    "id": "97",
+    "name": "Koshari",
+    "text": "Koshari is a filling Egyptian street food made from rice, lentils, pasta, chickpeas, tomato sauce, garlic vinegar, and crispy fried onions. Although simple and affordable, it offers a satisfying combination of textures and flavors, from soft grains to crunchy toppings. It is often enjoyed as a complete vegetarian meal and is valued for its high fiber and plant-based protein content. Koshari is widely loved in Egypt as both comfort food and an everyday staple because it is hearty, flavorful, and easy to share.",
+    "region": "Egypt",
+    "type": "World Cuisine Main Course",
+    "ingredients": ["rice", "lentils", "pasta", "chickpeas", "tomato sauce", "garlic", "fried onions"],
+    "cooking_method": "Boiled, layered, and topped",
+    "nutritional_benefits": ["fiber", "plant protein", "iron", "complex carbohydrates"],
+    "cultural_background": "Koshari is one of Egypt’s most iconic comfort dishes and is commonly sold by street vendors and restaurants.",
+    "regional_variations": ["classic koshari", "spicy koshari", "home-style koshari"],
+    "dietary_tags": ["vegetarian", "high-fiber"],
+    "allergens": ["wheat"]
+  },
+  {
+    "id": "98",
+    "name": "Borscht",
+    "text": "Borscht is a vibrant Eastern European soup best known for its deep red color from beets and its comforting, earthy flavor. It is often made with cabbage, potatoes, carrots, onions, broth, and sometimes beef or pork, then served with sour cream and bread. The soup can be enjoyed hot or cold depending on the region and season. Borscht is nutritious because it contains vegetables rich in fiber, vitamins, and minerals. It is widely associated with family meals and traditional home cooking.",
+    "region": "Ukraine / Eastern Europe",
+    "type": "Comfort Food Soup",
+    "ingredients": ["beets", "cabbage", "potatoes", "carrots", "onions", "broth", "sour cream"],
+    "cooking_method": "Simmered",
+    "nutritional_benefits": ["fiber", "folate", "vitamin C", "antioxidants"],
+    "cultural_background": "Borscht is a culturally important soup across Eastern Europe and often passed down through generations.",
+    "regional_variations": ["Ukrainian borscht", "Polish beet soup", "vegetarian borscht"],
+    "dietary_tags": ["comfort food"],
+    "allergens": ["milk"]
+  },
+  {
+    "id": "99",
+    "name": "Quinoa Chickpea Buddha Bowl",
+    "text": "A quinoa chickpea Buddha bowl is a balanced health-focused meal built around fluffy quinoa, roasted chickpeas, leafy greens, fresh vegetables, and a light dressing or tahini sauce. It is colorful, nutrient-dense, and easy to customize based on seasonal produce. This bowl is especially useful for people looking for a filling meal with fiber, plant protein, and healthy fats without relying heavily on processed ingredients. It is commonly chosen by students, professionals, and health-conscious eaters because it is both practical and nourishing.",
+    "region": "Global",
+    "type": "Health-Conscious Bowl",
+    "ingredients": ["quinoa", "chickpeas", "spinach", "carrots", "cucumber", "avocado", "tahini"],
+    "cooking_method": "Roasted and assembled",
+    "nutritional_benefits": ["plant protein", "fiber", "healthy fats", "iron", "magnesium"],
+    "cultural_background": "Buddha bowls are modern wellness-inspired meals influenced by global grain and vegetable-based eating styles.",
+    "regional_variations": ["Mediterranean bowl", "Asian-inspired bowl", "spicy roasted bowl"],
+    "dietary_tags": ["vegan", "vegetarian", "high-fiber", "healthy"],
+    "allergens": ["sesame"]
+  },
+  {
+    "id": "100",
+    "name": "Grilled Salmon with Quinoa",
+    "text": "Grilled salmon with quinoa is a nutrient-rich meal known for its balance of lean protein, healthy fats, and complex carbohydrates. The salmon is usually seasoned with herbs, lemon, garlic, and olive oil before grilling until tender and lightly charred. It is often paired with fluffy quinoa and steamed or roasted vegetables to create a complete and satisfying plate. This dish is popular among health-conscious eaters because it supports heart health, muscle recovery, and long-lasting energy while still feeling flavorful and satisfying.",
+    "region": "Global",
+    "type": "Health-Conscious Main Course",
+    "ingredients": ["salmon", "quinoa", "lemon", "garlic", "olive oil", "herbs", "vegetables"],
+    "cooking_method": "Grilled and steamed",
+    "nutritional_benefits": ["omega-3", "high protein", "magnesium", "B vitamins"],
+    "cultural_background": "This dish reflects modern healthy meal planning that combines whole grains, seafood, and vegetables.",
+    "regional_variations": ["Mediterranean salmon quinoa", "herb-crusted salmon", "teriyaki-style salmon bowl"],
+    "dietary_tags": ["high-protein", "healthy", "gluten-free"],
+    "allergens": ["fish"]
+  },
+  {
+    "id": "101",
+    "name": "Lentil Spinach Soup",
+    "text": "Lentil spinach soup is a wholesome and budget-friendly dish made with lentils, spinach, onions, garlic, carrots, celery, and light seasonings simmered in broth. It is naturally filling and comforting while still being considered a healthy option due to its high fiber and plant-based protein content. The soup is especially suitable for cooler weather, meal prep, and simple family meals. It is often enjoyed with bread or crackers and is valued for supporting digestion, energy, and overall balanced eating without being overly heavy.",
+    "region": "Global",
+    "type": "Health-Conscious Soup",
+    "ingredients": ["lentils", "spinach", "carrots", "celery", "onions", "garlic", "broth"],
+    "cooking_method": "Simmered",
+    "nutritional_benefits": ["fiber", "plant protein", "iron", "folate"],
+    "cultural_background": "Lentil soups are found in many cultures and are widely appreciated as affordable, nutritious comfort meals.",
+    "regional_variations": ["Mediterranean lentil soup", "spiced lentil soup", "vegetable lentil soup"],
+    "dietary_tags": ["vegan", "vegetarian", "healthy", "high-fiber"],
+    "allergens": []
+  },
+  {
+    "id": "102",
+    "name": "Tofu Vegetable Stir Fry",
+    "text": "Tofu vegetable stir fry is a light but satisfying dish made by quickly cooking tofu with colorful vegetables such as broccoli, carrots, bell peppers, mushrooms, and snap peas in a savory sauce. The fast cooking method helps preserve the freshness, texture, and nutrients of the vegetables while giving the tofu a flavorful coating. It is a practical and healthy meal for busy days because it is quick to prepare and easy to customize. It also provides plant protein and a wide range of vitamins from mixed vegetables.",
+    "region": "East Asia Inspired",
+    "type": "Health-Conscious Main Course",
+    "ingredients": ["tofu", "broccoli", "carrots", "bell peppers", "soy sauce", "garlic", "ginger"],
+    "cooking_method": "Stir-fried",
+    "nutritional_benefits": ["plant protein", "fiber", "vitamin A", "vitamin C"],
+    "cultural_background": "Vegetable stir fry dishes are common across East Asian cuisines and have become a popular healthy meal worldwide.",
+    "regional_variations": ["garlic tofu stir fry", "spicy tofu stir fry", "sesame vegetable stir fry"],
+    "dietary_tags": ["vegan", "vegetarian", "healthy"],
+    "allergens": ["soy"]
+  },
+  {
+    "id": "103",
+    "name": "Greek Yogurt Berry Parfait",
+    "text": "Greek yogurt berry parfait is a light and refreshing layered dish made with thick yogurt, fresh berries, granola, nuts, and sometimes a drizzle of honey. It is commonly eaten as breakfast, snack, or even a healthier dessert because it offers protein, probiotics, and natural sweetness from fruit. The layered presentation also makes it visually appealing and easy to prepare in advance. This dish is especially useful for people who want something nutritious, convenient, and satisfying without needing a full cooked meal.",
+    "region": "Global",
+    "type": "Health-Conscious Breakfast",
+    "ingredients": ["Greek yogurt", "berries", "granola", "nuts", "honey"],
+    "cooking_method": "Layered and chilled",
+    "nutritional_benefits": ["protein", "probiotics", "calcium", "antioxidants"],
+    "cultural_background": "Parfaits are modern layered meals that combine convenience and balanced nutrition in a simple format.",
+    "regional_variations": ["strawberry parfait", "mixed berry parfait", "banana nut parfait"],
+    "dietary_tags": ["healthy", "high-protein"],
+    "allergens": ["milk", "nuts"]
+  },
+  {
+    "id": "104",
+    "name": "Zucchini Turkey Meatballs",
+    "text": "Zucchini turkey meatballs are a lighter alternative to traditional meatballs, combining lean ground turkey with grated zucchini, herbs, garlic, and breadcrumbs or oats. The zucchini helps keep the meatballs moist while adding extra vegetables and fiber. They can be baked or pan-seared and served with tomato sauce, salad, or grain bowls. This dish is a strong option for people seeking a high-protein, lower-fat comfort-style meal that still feels satisfying. It is especially practical for meal prep and healthy home cooking.",
+    "region": "Global",
+    "type": "Health-Conscious Main Course",
+    "ingredients": ["ground turkey", "zucchini", "garlic", "herbs", "egg", "breadcrumbs"],
+    "cooking_method": "Mixed and baked",
+    "nutritional_benefits": ["lean protein", "vitamin A", "fiber", "lower fat"],
+    "cultural_background": "This dish reflects modern healthy adaptations of classic home-style comfort food.",
+    "regional_variations": ["Italian-style turkey meatballs", "herb baked meatballs", "gluten-free turkey meatballs"],
+    "dietary_tags": ["high-protein", "healthy"],
+    "allergens": ["egg", "wheat"]
+  },
+  {
+    "id": "105",
+    "name": "Chicken Noodle Soup",
+    "text": "Chicken noodle soup is one of the most familiar comfort foods in many households around the world. It is typically made with chicken, noodles, carrots, celery, onions, and herbs simmered in a warm savory broth. The dish is often associated with care, home cooking, and recovery during cold or rainy days. Its soft texture and soothing warmth make it easy to enjoy when someone wants a gentle but filling meal. Chicken noodle soup remains timeless because it is simple, nostalgic, and deeply comforting.",
+    "region": "Global",
+    "type": "Comfort Food Soup",
+    "ingredients": ["chicken", "egg noodles", "carrots", "celery", "onions", "broth", "parsley"],
+    "cooking_method": "Simmered",
+    "nutritional_benefits": ["protein", "hydration", "vitamins", "comforting broth"],
+    "cultural_background": "This soup is widely associated with healing meals and family kitchens across many cultures.",
+    "regional_variations": ["classic chicken noodle soup", "creamy chicken soup", "vegetable-heavy chicken soup"],
+    "dietary_tags": ["comfort food"],
+    "allergens": ["wheat"]
+  },
+  {
+    "id": "106",
+    "name": "Shepherd’s Pie",
+    "text": "Shepherd’s pie is a baked comfort dish made with seasoned ground meat, vegetables, and a fluffy layer of mashed potatoes on top. The filling is often cooked with onions, carrots, peas, and savory gravy before being covered and baked until golden. It is warm, hearty, and especially popular during colder seasons. Shepherd’s pie is commonly associated with family dinners and traditional home cooking because it stretches simple ingredients into a filling meal. Its layered texture and rich flavor make it a long-time comfort food favorite.",
+    "region": "United Kingdom",
+    "type": "Comfort Food Main Course",
+    "ingredients": ["ground lamb or beef", "mashed potatoes", "peas", "carrots", "onions", "gravy"],
+    "cooking_method": "Layered and baked",
+    "nutritional_benefits": ["protein", "iron", "carbohydrates", "vegetable content"],
+    "cultural_background": "Shepherd’s pie is a classic British comfort dish traditionally made to use leftover roasted meat.",
+    "regional_variations": ["beef cottage pie", "lamb shepherd’s pie", "vegetarian shepherd’s pie"],
+    "dietary_tags": ["comfort food"],
+    "allergens": ["milk"]
+  },
+  {
+    "id": "107",
+    "name": "Macaroni and Cheese",
+    "text": "Macaroni and cheese is a creamy pasta dish made by coating cooked macaroni in a rich cheese sauce, often then baked until bubbling and golden on top. It is one of the most recognizable comfort foods because of its soft texture, cheesy flavor, and nostalgic association with home meals and childhood favorites. Some versions include breadcrumbs, bacon, or extra cheeses for more richness. While simple, it remains deeply satisfying and is commonly served as either a main meal or side dish during gatherings and celebrations.",
+    "region": "United States",
+    "type": "Comfort Food Main Course",
+    "ingredients": ["macaroni", "cheddar cheese", "milk", "butter", "flour", "breadcrumbs"],
+    "cooking_method": "Boiled and baked",
+    "nutritional_benefits": ["calcium", "energy-dense", "comforting carbohydrates"],
+    "cultural_background": "Mac and cheese became a staple comfort food in American home cooking and casual dining culture.",
+    "regional_variations": ["baked mac and cheese", "stovetop mac and cheese", "three-cheese macaroni"],
+    "dietary_tags": ["comfort food"],
+    "allergens": ["milk", "wheat"]
+  },
+  {
+    "id": "108",
+    "name": "Beef Stroganoff",
+    "text": "Beef stroganoff is a creamy and savory dish made with strips of beef cooked in a sauce of mushrooms, onions, broth, and sour cream, then served over noodles or rice. The dish is rich and deeply satisfying, making it a popular comfort meal for home dinners and colder weather. Its creamy texture and tender meat create a luxurious but approachable meal that feels both traditional and special. It is often associated with classic European-inspired family cooking and remains a favorite in many kitchens.",
+    "region": "Russia / Eastern Europe",
+    "type": "Comfort Food Main Course",
+    "ingredients": ["beef", "mushrooms", "onions", "sour cream", "broth", "egg noodles"],
+    "cooking_method": "Sautéed and simmered",
+    "nutritional_benefits": ["protein", "iron", "B vitamins"],
+    "cultural_background": "Beef stroganoff is a classic Russian-origin dish that became internationally popular through home-style adaptations.",
+    "regional_variations": ["classic stroganoff", "mushroom stroganoff", "ground beef stroganoff"],
+    "dietary_tags": ["comfort food"],
+    "allergens": ["milk", "wheat"]
+  },
+  {
+    "id": "109",
+    "name": "Arroz Caldo",
+    "text": "Arroz caldo is a Filipino rice porridge cooked with chicken, ginger, garlic, and broth until thick and soothing. It is often topped with boiled egg, green onions, toasted garlic, and calamansi or lemon for extra flavor. This dish is commonly eaten during rainy days, when someone feels unwell, or whenever a warm and gentle meal is needed. It is deeply comforting and culturally familiar in Filipino households because it combines softness, warmth, and simple nourishing ingredients into one satisfying bowl.",
+    "region": "Philippines",
+    "type": "Comfort Food Porridge",
+    "ingredients": ["rice", "chicken", "ginger", "garlic", "broth", "egg", "green onions"],
+    "cooking_method": "Simmered into porridge",
+    "nutritional_benefits": ["protein", "easy to digest", "warming ingredients", "hydrating"],
+    "cultural_background": "Arroz caldo is a beloved Filipino comfort dish often served during cold weather or recovery from illness.",
+    "regional_variations": ["classic arroz caldo", "lugaw style", "tokwa’t baboy pairing"],
+    "dietary_tags": ["comfort food", "gluten-free"],
+    "allergens": ["egg"]
+  },
+  {
+    "id": "110",
+    "name": "Baked Ziti",
+    "text": "Baked ziti is a comforting pasta casserole made by combining ziti pasta with tomato sauce, cheese, and often ground meat or sausage before baking until hot and bubbly. It is a classic crowd-pleasing dish because it is rich, cheesy, and easy to serve for family dinners or gatherings. The pasta absorbs the sauce while baking, creating a deeply savory and satisfying texture. Baked ziti is often associated with Italian-American home cooking and remains popular for celebrations, potlucks, and make-ahead meals.",
+    "region": "Italy / Italian-American",
+    "type": "Comfort Food Main Course",
+    "ingredients": ["ziti pasta", "tomato sauce", "mozzarella", "ricotta", "ground beef", "parmesan"],
+    "cooking_method": "Boiled and baked",
+    "nutritional_benefits": ["protein", "calcium", "energy-dense"],
+    "cultural_background": "Baked ziti is strongly associated with Italian-American family meals and festive shared dining.",
+    "regional_variations": ["meat baked ziti", "vegetarian baked ziti", "extra cheese baked ziti"],
+    "dietary_tags": ["comfort food"],
+    "allergens": ["milk", "wheat"]
+  }
+]
