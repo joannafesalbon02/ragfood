@@ -360,6 +360,12 @@ Install dependencies inside the cloud version:
 
 ```
 </> bash
+pip install -r docs/requirements.txt
+```
+or
+
+```
+</> bash
 pip install python-dotenv upstash-vector groq
 ```
 
