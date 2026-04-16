@@ -8,6 +8,7 @@
 
 ## 💻 Project Overview
 RAGFood is a food recommendation and food information retrieval system built using **Retrieval-Augmented Generation (RAG)**.  
+
 This project started as a **local-only implementation** using **ChromaDB** and a local LLM workflow, then was migrated into a **cloud-powered version** using **Upstash Vector** and **Groq API**.
 
 The goal of this project is to demonstrate how a traditional local RAG system can be transformed into a more scalable, cloud-ready solution while preserving retrieval quality and improving deployment readiness.
@@ -57,6 +58,8 @@ RAGFOOD-MAIN
 │ │ ├── Week 3 Test Queries
 │ │ └── Comparison and Quality Assessment
 │ ├── MIGRATION_PLAN.md
+│ ├── README.md
+│ ├── requirements.txt
 │ ├── .env
 │ └── rag_run.py
 ├── local-version
